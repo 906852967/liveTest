@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		89F25AAA206A34B10061AA74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F25AA9206A34B10061AA74 /* AppDelegate.swift */; };
-		89F25AAC206A34B10061AA74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F25AAB206A34B10061AA74 /* ViewController.swift */; };
 		89F25AAF206A34B10061AA74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F25AAD206A34B10061AA74 /* Main.storyboard */; };
 		89F25AB1206A34B10061AA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F25AB0206A34B10061AA74 /* Assets.xcassets */; };
 		89F25ABF206A34B10061AA74 /* DouYuAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F25ABE206A34B10061AA74 /* DouYuAPPTests.swift */; };
@@ -40,7 +39,6 @@
 		895099B1206B30FC006D2159 /* DouYuBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYuBridge.h; sourceTree = "<group>"; };
 		89F25AA6206A34B10061AA74 /* DouYuAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F25AA9206A34B10061AA74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89F25AAB206A34B10061AA74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89F25AAE206A34B10061AA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F25AB0206A34B10061AA74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F25AB5206A34B10061AA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +93,61 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		891304AC206DD7DB000FDD37 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				891304B0206DD7DB000FDD37 /* Main */,
+				891304AE206DD7DB000FDD37 /* Home */,
+				891304AF206DD7DB000FDD37 /* Live */,
+				891304AD206DD7DB000FDD37 /* Follow */,
+				891304B1206DD7DB000FDD37 /* Profile */,
+				891304B2206DD7F7000FDD37 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		891304AD206DD7DB000FDD37 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		891304AE206DD7DB000FDD37 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		891304AF206DD7DB000FDD37 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		891304B0206DD7DB000FDD37 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		891304B1206DD7DB000FDD37 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		891304B2206DD7F7000FDD37 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		89F25A9D206A34B00061AA74 = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +173,8 @@
 		89F25AA8206A34B10061AA74 /* DouYuAPP */ = {
 			isa = PBXGroup;
 			children = (
+				891304AC206DD7DB000FDD37 /* Classes */,
 				89F25AA9206A34B10061AA74 /* AppDelegate.swift */,
-				89F25AAB206A34B10061AA74 /* ViewController.swift */,
 				89F25AAD206A34B10061AA74 /* Main.storyboard */,
 				89F25AB0206A34B10061AA74 /* Assets.xcassets */,
 				89F25AB5206A34B10061AA74 /* Info.plist */,
@@ -338,7 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F25AAC206A34B10061AA74 /* ViewController.swift in Sources */,
 				89F25AAA206A34B10061AA74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
