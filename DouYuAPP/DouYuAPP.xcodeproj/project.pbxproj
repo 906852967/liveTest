@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		899ED78820874354003B3EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899ED78720874354003B3EB1 /* Main.storyboard */; };
 		89F25AAA206A34B10061AA74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F25AA9206A34B10061AA74 /* AppDelegate.swift */; };
-		89F25AAF206A34B10061AA74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F25AAD206A34B10061AA74 /* Main.storyboard */; };
 		89F25AB1206A34B10061AA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F25AB0206A34B10061AA74 /* Assets.xcassets */; };
 		89F25ABF206A34B10061AA74 /* DouYuAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F25ABE206A34B10061AA74 /* DouYuAPPTests.swift */; };
 		89F25ACA206A34B10061AA74 /* DouYuAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F25AC9206A34B10061AA74 /* DouYuAPPUITests.swift */; };
@@ -37,9 +37,9 @@
 		3049030DD472A3AE5E85C1B6 /* libPods-DouYuAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DouYuAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FAEA228C14F04A4E6A5DF /* Pods-DouYuAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.release.xcconfig"; sourceTree = "<group>"; };
 		895099B1206B30FC006D2159 /* DouYuBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DouYuBridge.h; sourceTree = "<group>"; };
+		899ED78720874354003B3EB1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		89F25AA6206A34B10061AA74 /* DouYuAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F25AA9206A34B10061AA74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89F25AAE206A34B10061AA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F25AB0206A34B10061AA74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F25AB5206A34B10061AA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89F25ABA206A34B10061AA74 /* DouYuAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouYuAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +130,7 @@
 		891304B0206DD7DB000FDD37 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				899ED78720874354003B3EB1 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -175,7 +176,6 @@
 			children = (
 				891304AC206DD7DB000FDD37 /* Classes */,
 				89F25AA9206A34B10061AA74 /* AppDelegate.swift */,
-				89F25AAD206A34B10061AA74 /* Main.storyboard */,
 				89F25AB0206A34B10061AA74 /* Assets.xcassets */,
 				89F25AB5206A34B10061AA74 /* Info.plist */,
 			);
@@ -311,8 +311,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899ED78820874354003B3EB1 /* Main.storyboard in Resources */,
 				89F25AB1206A34B10061AA74 /* Assets.xcassets in Resources */,
-				89F25AAF206A34B10061AA74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,17 +425,6 @@
 			targetProxy = 89F25AC6206A34B10061AA74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		89F25AAD206A34B10061AA74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89F25AAE206A34B10061AA74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		89F25ACC206A34B10061AA74 /* Debug */ = {
