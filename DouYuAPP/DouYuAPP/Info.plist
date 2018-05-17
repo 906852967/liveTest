@@ -37,5 +37,34 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>UIApplicationShortcutItems</key>
+    <array>
+        <dict>
+            <key>UIApplicationShortcutItemIconType</key>
+            <string>UIApplicationShortcutIconTypeShare</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>分享“DM3DTouch”</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>cn.damon.DM3DTouchDemo.openShare</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <key>key2</key>
+                <string>value2</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>UIApplicationShortcutItemIconFile</key>
+            <string>favorite</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>收藏</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>cn.damon.DM3DTouchDemo.openfavorites</string>
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <key>key1</key>
+                <string>value1</string>
+            </dict>
+        </dict>
+    </array>
 </dict>
 </plist>
