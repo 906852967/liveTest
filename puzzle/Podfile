@@ -1,0 +1,6 @@
+platform :ios, '11.0'
+use_frameworks!
+target 'puzzle' do
+    pod 'Koloda', '~>4.4'
+    pod 'StarWars', '~> 2.0'
+end

@@ -1,3 +1,7 @@
 platform :ios, '9.0' #手机的系统
+use_frameworks!
 target 'DouYuAPP' do #工程名字
+    pod 'Alamofire'
+    pod 'Moya'
+    pod 'HandyJSON', '~> 4.1.1'
 end

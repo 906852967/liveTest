@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
