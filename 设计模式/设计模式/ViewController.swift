@@ -99,14 +99,22 @@ class CashFactory : NSObject {
 }
 //Context
 class CashContext : NSObject {
-//    var cs : CashSuper
-//    var type : String = ""
-//    init(_ cashSuper : CashSuper) {
-//       cs = cashSuper
-//    }
-//    func contextsInterfance() -> CashSuper{
-//        return cashSuper
-//    }
+    var cs : CashSuper
+    init(_ type : String) {
+        switch type {
+        case "正常收费":
+            cs = CashNormal()
+        case "满300返100":
+            cs = CashReturn(moneyConditionString: "300", moneyReturnString: "100")
+        case "打8折":
+            cs = CashRebate("0.8")
+        default:
+            cs = CashSuper()
+        }
+    }
+    func getResult(_ money : Double) -> Double{
+        return cs.acceptCash(money)
+    }
 }
 
 
