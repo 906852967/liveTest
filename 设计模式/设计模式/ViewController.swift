@@ -15,12 +15,11 @@ class ViewController: UIViewController {
     let items = ["正常收费", "打八折", "打七折", "打五折"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     @IBAction func totalAction(_ sender: UIButton) {
         totalPeiceLabel.text = String(btnOk_click("打八折"))
+        present(Mianshi(), animated: true, completion: nil)
     }
-    
 }
 
 extension ViewController{
@@ -116,5 +115,4 @@ class CashContext : NSObject {
         return cs.acceptCash(money)
     }
 }
-
 
