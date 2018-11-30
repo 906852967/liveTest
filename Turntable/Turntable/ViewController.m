@@ -78,10 +78,12 @@
     _labPrise.text = [NSString stringWithFormat:@"中奖结果:%@", @"等待开奖结果"];
     _btn.enabled = NO;
     
+
     CABasicAnimation *rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = [NSNumber numberWithFloat:angle * M_PI/180];
     rotationAnimation.repeatCount = 10;
+    rotationAnimation.speed = 8;
     rotationAnimation.duration = 2.0f;
     rotationAnimation.timingFunction =  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     rotationAnimation.cumulative = YES;
@@ -90,6 +92,7 @@
     rotationAnimation.removedOnCompletion = NO;
     [_zhuanpan.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
+
 //动画结束
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
@@ -99,9 +102,9 @@
         self.popView.transform = CGAffineTransformMakeScale(2, 2);
         [self.view addSubview:self.popView];
         
-        UIImageView *popImageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 150, self.view.frame.size.width - 200, self.view.frame.size.width - 200)];
-        popImageView.image = [UIImage imageNamed:@"prise.png"];
-        [self.popView addSubview:popImageView];
+//        UIImageView *popImageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 150, self.view.frame.size.width - 200, self.view.frame.size.width - 200)];
+//        popImageView.image = [UIImage imageNamed:@"prise.png"];
+        //[self.popView addSubview:popImageView];
         
     } completion:^(BOOL finished) {
         [self.popView removeFromSuperview];
