@@ -81,8 +81,9 @@
     CABasicAnimation *rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = [NSNumber numberWithFloat:angle * M_PI/180];
-    
+    rotationAnimation.repeatCount = 10;
     rotationAnimation.duration = 2.0f;
+    rotationAnimation.timingFunction =  [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     rotationAnimation.cumulative = YES;
     rotationAnimation.delegate = self;
     rotationAnimation.fillMode = kCAFillModeForwards;
