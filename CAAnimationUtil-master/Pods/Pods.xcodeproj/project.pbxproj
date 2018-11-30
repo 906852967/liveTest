@@ -7,21 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C0DA1AF3E2E9400FB60B69499BE5279 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		1515E6FA71C6C35909A29D403122DF8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		2FF6A62A05C66DBDE6E864F91815BD6E /* UUButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9D83B8E7150096D5DF72582568401 /* UUButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66F09B999B5B2B065BEC07565B49F278 /* UUButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D5412ED8CFE5F47D27D248F57E948 /* UUButton.m */; };
-		A1AC9F234E2E7B868F443A449B8B68F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		F3518398A4EF843B392FAAA9D111552A /* Pods-CAAnimationUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA692AE52EB7CCD7E88D044541B17078 /* Pods-CAAnimationUtil-dummy.m */; };
-		FE0F7277873EB7D0DD8551CC98701878 /* UUButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F496A9A3B5DB68A225C7B05CD65CD07 /* UUButton-dummy.m */; };
+		0DC1F56844EAC598083965D82742B016 /* UUButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 015D5412ED8CFE5F47D27D248F57E948 /* UUButton.m */; };
+		429B814656F1BF86AE85A02BDE23A0B3 /* UUButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9D83B8E7150096D5DF72582568401 /* UUButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BFC141CA7649200E993493A213371EA6 /* Pods-CAAnimationUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC00245B79DE09ACDE368A6495425F6 /* Pods-CAAnimationUtil-dummy.m */; };
+		D28AFB1562BAE1903C967AD597BFBB9C /* UUButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F496A9A3B5DB68A225C7B05CD65CD07 /* UUButton-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		96A715B04872F1BE3DB2650F8100B328 /* PBXContainerItemProxy */ = {
+		56822264B437D7A4C09A3A91F6E8354B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A80F76336B4D3EEC8B97A5520DC16E4;
+			remoteGlobalIDString = 25A1E7FF9FDE38C2797499802B77D97B;
 			remoteInfo = UUButton;
 		};
 /* End PBXContainerItemProxy section */
@@ -29,75 +26,50 @@
 /* Begin PBXFileReference section */
 		015D5412ED8CFE5F47D27D248F57E948 /* UUButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UUButton.m; path = UUButton/UUButton.m; sourceTree = "<group>"; };
 		118C49F1851DF4A8C28D9978EE1AFC84 /* UUButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UUButton-prefix.pch"; sourceTree = "<group>"; };
-		1BC8C01D7AD100A03150199D46451D07 /* Pods-CAAnimationUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAAnimationUtil.release.xcconfig"; sourceTree = "<group>"; };
 		1F496A9A3B5DB68A225C7B05CD65CD07 /* UUButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UUButton-dummy.m"; sourceTree = "<group>"; };
-		2DE9DA60223C87F8C0F39FF801F49354 /* Pods-CAAnimationUtil-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CAAnimationUtil-acknowledgements.plist"; sourceTree = "<group>"; };
-		7793F179A7FFA9E09AE3F8C093A862A2 /* Pods-CAAnimationUtil-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CAAnimationUtil-resources.sh"; sourceTree = "<group>"; };
-		8873D70C832B05593A6ADE4CD70AD8E5 /* Pods-CAAnimationUtil-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CAAnimationUtil-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98F588D7FA353B9ADBC151B61DB53A01 /* Pods-CAAnimationUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAAnimationUtil.debug.xcconfig"; sourceTree = "<group>"; };
+		3DF1640ED2E02DA270B0CF626DE654F2 /* Pods-CAAnimationUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAAnimationUtil.debug.xcconfig"; sourceTree = "<group>"; };
+		4AC00245B79DE09ACDE368A6495425F6 /* Pods-CAAnimationUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CAAnimationUtil-dummy.m"; sourceTree = "<group>"; };
+		8C3910C48DA53404B8724A04766F3068 /* Pods-CAAnimationUtil-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CAAnimationUtil-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AF3F05E13C008801490FF97D8562AA2 /* Pods-CAAnimationUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CAAnimationUtil.release.xcconfig"; sourceTree = "<group>"; };
 		A95DCA6995C420143458FE21A05C73AC /* UUButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UUButton.xcconfig; sourceTree = "<group>"; };
-		ADE83411AF7A6AFED292E7DA132DA496 /* libUUButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUUButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFB998F78ADCE8F6BCF9A91CBC6D8709 /* Pods-CAAnimationUtil-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CAAnimationUtil-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		CA692AE52EB7CCD7E88D044541B17078 /* Pods-CAAnimationUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CAAnimationUtil-dummy.m"; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DF4725D5A2C0217BF2F51A0F000DBE3C /* libPods-CAAnimationUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CAAnimationUtil.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE83411AF7A6AFED292E7DA132DA496 /* libUUButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libUUButton.a; path = libUUButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4725D5A2C0217BF2F51A0F000DBE3C /* libPods-CAAnimationUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CAAnimationUtil.a"; path = "libPods-CAAnimationUtil.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3F414E12912988CDFBAD3346091023 /* Pods-CAAnimationUtil-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CAAnimationUtil-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FDC9D83B8E7150096D5DF72582568401 /* UUButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UUButton.h; path = UUButton/UUButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		48EBBDD8B4F6580610ACC03C0A0418CC /* Frameworks */ = {
+		1064FE7A6FEA8D3E28868345194D3CC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0DA1AF3E2E9400FB60B69499BE5279 /* Foundation.framework in Frameworks */,
-				A1AC9F234E2E7B868F443A449B8B68F7 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		689A2A00BB5DE372F7B53BF8992FAE74 /* Frameworks */ = {
+		51138389FAEFEFD3936F37A8FED6CC0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1515E6FA71C6C35909A29D403122DF8F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		198237EB09B2AF36E675D9626805C93F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				BA2647229DC5087613C0883C9CD131B0 /* UUButton */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		643AC9FEE34D90B8A73AB6A1611B33F8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D296EA3196B513ABB555C3B2350075ED /* Pods-CAAnimationUtil */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		725D5E112D11C2928D40957974CB3CD6 /* Support Files */ = {
@@ -124,11 +96,32 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				198237EB09B2AF36E675D9626805C93F /* Pods */,
 				76F1E1DB5CE089A46BE4FBF4CEC21289 /* Products */,
-				643AC9FEE34D90B8A73AB6A1611B33F8 /* Targets Support Files */,
+				A2F29BBD587A8A6605622B4CCD0BDCDC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A2F29BBD587A8A6605622B4CCD0BDCDC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B79C73CBEAC061A222817FEEE415CEA3 /* Pods-CAAnimationUtil */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B79C73CBEAC061A222817FEEE415CEA3 /* Pods-CAAnimationUtil */ = {
+			isa = PBXGroup;
+			children = (
+				FD3F414E12912988CDFBAD3346091023 /* Pods-CAAnimationUtil-acknowledgements.markdown */,
+				8C3910C48DA53404B8724A04766F3068 /* Pods-CAAnimationUtil-acknowledgements.plist */,
+				4AC00245B79DE09ACDE368A6495425F6 /* Pods-CAAnimationUtil-dummy.m */,
+				3DF1640ED2E02DA270B0CF626DE654F2 /* Pods-CAAnimationUtil.debug.xcconfig */,
+				9AF3F05E13C008801490FF97D8562AA2 /* Pods-CAAnimationUtil.release.xcconfig */,
+			);
+			name = "Pods-CAAnimationUtil";
+			path = "Target Support Files/Pods-CAAnimationUtil";
 			sourceTree = "<group>";
 		};
 		BA2647229DC5087613C0883C9CD131B0 /* UUButton */ = {
@@ -138,45 +131,38 @@
 				015D5412ED8CFE5F47D27D248F57E948 /* UUButton.m */,
 				725D5E112D11C2928D40957974CB3CD6 /* Support Files */,
 			);
+			name = UUButton;
 			path = UUButton;
-			sourceTree = "<group>";
-		};
-		D296EA3196B513ABB555C3B2350075ED /* Pods-CAAnimationUtil */ = {
-			isa = PBXGroup;
-			children = (
-				AFB998F78ADCE8F6BCF9A91CBC6D8709 /* Pods-CAAnimationUtil-acknowledgements.markdown */,
-				2DE9DA60223C87F8C0F39FF801F49354 /* Pods-CAAnimationUtil-acknowledgements.plist */,
-				CA692AE52EB7CCD7E88D044541B17078 /* Pods-CAAnimationUtil-dummy.m */,
-				8873D70C832B05593A6ADE4CD70AD8E5 /* Pods-CAAnimationUtil-frameworks.sh */,
-				7793F179A7FFA9E09AE3F8C093A862A2 /* Pods-CAAnimationUtil-resources.sh */,
-				98F588D7FA353B9ADBC151B61DB53A01 /* Pods-CAAnimationUtil.debug.xcconfig */,
-				1BC8C01D7AD100A03150199D46451D07 /* Pods-CAAnimationUtil.release.xcconfig */,
-			);
-			name = "Pods-CAAnimationUtil";
-			path = "Target Support Files/Pods-CAAnimationUtil";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8CD456E704DD93DB74F799EDE1BCB838 /* Headers */ = {
+		6ADED0A510185985177F1060FCD0A38C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF6A62A05C66DBDE6E864F91815BD6E /* UUButton.h in Headers */,
+				429B814656F1BF86AE85A02BDE23A0B3 /* UUButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E82F0E9C061F087E32331C67067488 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3A80F76336B4D3EEC8B97A5520DC16E4 /* UUButton */ = {
+		25A1E7FF9FDE38C2797499802B77D97B /* UUButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E9C6C880EA7E1D844EBE512E645492D /* Build configuration list for PBXNativeTarget "UUButton" */;
+			buildConfigurationList = AB3E15E15A3DC7B9110AA72E656AFD85 /* Build configuration list for PBXNativeTarget "UUButton" */;
 			buildPhases = (
-				71F95568662C43861F8DD0C5780B1082 /* Sources */,
-				48EBBDD8B4F6580610ACC03C0A0418CC /* Frameworks */,
-				8CD456E704DD93DB74F799EDE1BCB838 /* Headers */,
+				6ADED0A510185985177F1060FCD0A38C /* Headers */,
+				6AC3EA445099A55CF0E9470703DC6B8C /* Sources */,
+				51138389FAEFEFD3936F37A8FED6CC0D /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,17 +173,18 @@
 			productReference = ADE83411AF7A6AFED292E7DA132DA496 /* libUUButton.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5B5F5889C1CADAE283CDF6710F2600A2 /* Pods-CAAnimationUtil */ = {
+		6832459150CADC5ADD481D260A98A24D /* Pods-CAAnimationUtil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5215B038193972CA76491F58A6F70A53 /* Build configuration list for PBXNativeTarget "Pods-CAAnimationUtil" */;
+			buildConfigurationList = 6ABD4668CB918BB85D24D7154A899726 /* Build configuration list for PBXNativeTarget "Pods-CAAnimationUtil" */;
 			buildPhases = (
-				107EB7042CDEE0775655CA3032854C67 /* Sources */,
-				689A2A00BB5DE372F7B53BF8992FAE74 /* Frameworks */,
+				D8E82F0E9C061F087E32331C67067488 /* Headers */,
+				9E0F42BCE77DB4DDE55AD785D2D15E1E /* Sources */,
+				1064FE7A6FEA8D3E28868345194D3CC0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0B246919E818F3BA0CE765332AE2A00C /* PBXTargetDependency */,
+				97CF6C28D9E50A501915C61B39F8EC2F /* PBXTargetDependency */,
 			);
 			name = "Pods-CAAnimationUtil";
 			productName = "Pods-CAAnimationUtil";
@@ -210,8 +197,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -225,46 +212,47 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B5F5889C1CADAE283CDF6710F2600A2 /* Pods-CAAnimationUtil */,
-				3A80F76336B4D3EEC8B97A5520DC16E4 /* UUButton */,
+				6832459150CADC5ADD481D260A98A24D /* Pods-CAAnimationUtil */,
+				25A1E7FF9FDE38C2797499802B77D97B /* UUButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		107EB7042CDEE0775655CA3032854C67 /* Sources */ = {
+		6AC3EA445099A55CF0E9470703DC6B8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3518398A4EF843B392FAAA9D111552A /* Pods-CAAnimationUtil-dummy.m in Sources */,
+				D28AFB1562BAE1903C967AD597BFBB9C /* UUButton-dummy.m in Sources */,
+				0DC1F56844EAC598083965D82742B016 /* UUButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71F95568662C43861F8DD0C5780B1082 /* Sources */ = {
+		9E0F42BCE77DB4DDE55AD785D2D15E1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0F7277873EB7D0DD8551CC98701878 /* UUButton-dummy.m in Sources */,
-				66F09B999B5B2B065BEC07565B49F278 /* UUButton.m in Sources */,
+				BFC141CA7649200E993493A213371EA6 /* Pods-CAAnimationUtil-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B246919E818F3BA0CE765332AE2A00C /* PBXTargetDependency */ = {
+		97CF6C28D9E50A501915C61B39F8EC2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UUButton;
-			target = 3A80F76336B4D3EEC8B97A5520DC16E4 /* UUButton */;
-			targetProxy = 96A715B04872F1BE3DB2650F8100B328 /* PBXContainerItemProxy */;
+			target = 25A1E7FF9FDE38C2797499802B77D97B /* UUButton */;
+			targetProxy = 56822264B437D7A4C09A3A91F6E8354B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		21A7BF6CA95D277B8DC71F4D88D23738 /* Debug */ = {
+		1832F9A2FDE0BB48D305144ECB9CFFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98F588D7FA353B9ADBC151B61DB53A01 /* Pods-CAAnimationUtil.debug.xcconfig */;
+			baseConfigurationReference = 3DF1640ED2E02DA270B0CF626DE654F2 /* Pods-CAAnimationUtil.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -275,34 +263,13 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos11.3;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3EC2385AC62FA421A6730453B889AEF3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BC8C01D7AD100A03150199D46451D07 /* Pods-CAAnimationUtil.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos11.3;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		653D3D4375052FF744BCFDA1655234F7 /* Debug */ = {
+		316B8C7B04EC99C54B3ED060554D813F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A95DCA6995C420143458FE21A05C73AC /* UUButton.xcconfig */;
 			buildSettings = {
@@ -315,15 +282,40 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = UUButton;
+				PRODUCT_NAME = UUButton;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos11.3;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+		8435E493BFAC7D43BAA26CF333ED8000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF3F05E13C008801490FF97D8562AA2 /* Pods-CAAnimationUtil.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96434B6C8FF320C976A10DAD7174A4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,10 +325,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -344,6 +338,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -352,6 +347,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -371,38 +367,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				SDKROOT = iphoneos11.3;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		D25DCF9CAB9AE68B0E77F137BEADAB58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A95DCA6995C420143458FE21A05C73AC /* UUButton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/UUButton/UUButton-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos11.3;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,10 +384,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -423,6 +397,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -431,6 +406,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -452,14 +428,36 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				SDKROOT = iphoneos11.3;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D5210BBBA0C86735E5C6DB087E347E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A95DCA6995C420143458FE21A05C73AC /* UUButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/UUButton/UUButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = UUButton;
+				PRODUCT_NAME = UUButton;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -469,26 +467,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
-				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+				D11C82AF2204B41B80412B8DC9C1D652 /* Debug */,
+				96434B6C8FF320C976A10DAD7174A4BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5215B038193972CA76491F58A6F70A53 /* Build configuration list for PBXNativeTarget "Pods-CAAnimationUtil" */ = {
+		6ABD4668CB918BB85D24D7154A899726 /* Build configuration list for PBXNativeTarget "Pods-CAAnimationUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21A7BF6CA95D277B8DC71F4D88D23738 /* Debug */,
-				3EC2385AC62FA421A6730453B889AEF3 /* Release */,
+				1832F9A2FDE0BB48D305144ECB9CFFB1 /* Debug */,
+				8435E493BFAC7D43BAA26CF333ED8000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E9C6C880EA7E1D844EBE512E645492D /* Build configuration list for PBXNativeTarget "UUButton" */ = {
+		AB3E15E15A3DC7B9110AA72E656AFD85 /* Build configuration list for PBXNativeTarget "UUButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				653D3D4375052FF744BCFDA1655234F7 /* Debug */,
-				D25DCF9CAB9AE68B0E77F137BEADAB58 /* Release */,
+				D5210BBBA0C86735E5C6DB087E347E14 /* Debug */,
+				316B8C7B04EC99C54B3ED060554D813F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
