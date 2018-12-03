@@ -3,5 +3,5 @@ use_frameworks!
 target 'DouYuAPP' do #工程名字
     pod 'Alamofire'
     pod 'Moya'
-    pod 'HandyJSON', '~> 4.1.1'
+    pod 'HandyJSON', '~> 4.2.0'
 end

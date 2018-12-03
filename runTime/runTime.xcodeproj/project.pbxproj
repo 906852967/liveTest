@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89059D8A21B52755003044C0 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89059D8921B52755003044C0 /* TestVC.m */; };
 		89A00796219E636000E5EB12 /* NSURL+url.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A00795219E636000E5EB12 /* NSURL+url.m */; };
 		89A00799219E951B00E5EB12 /* NSObject+HKKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A00798219E951B00E5EB12 /* NSObject+HKKVO.m */; };
 		89F2430F219D73E600F10AD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F2430E219D73E600F10AD6 /* AppDelegate.m */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		75AA1DB8C249EB585D892352 /* Pods_runTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_runTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89059D8821B52755003044C0 /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		89059D8921B52755003044C0 /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		89A00794219E636000E5EB12 /* NSURL+url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+url.h"; sourceTree = "<group>"; };
 		89A00795219E636000E5EB12 /* NSURL+url.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+url.m"; sourceTree = "<group>"; };
 		89A00797219E951B00E5EB12 /* NSObject+HKKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HKKVO.h"; sourceTree = "<group>"; };
@@ -98,7 +101,6 @@
 				E7B3AA5839DAD66BC3801283 /* Pods-runTime.debug.xcconfig */,
 				F0A3D0F3633F9933B8639840 /* Pods-runTime.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +133,8 @@
 				89F2430E219D73E600F10AD6 /* AppDelegate.m */,
 				89F24310219D73E600F10AD6 /* ViewController.h */,
 				89F24311219D73E600F10AD6 /* ViewController.m */,
+				89059D8821B52755003044C0 /* TestVC.h */,
+				89059D8921B52755003044C0 /* TestVC.m */,
 				89A00794219E636000E5EB12 /* NSURL+url.h */,
 				89A00795219E636000E5EB12 /* NSURL+url.m */,
 				89F24313219D73E600F10AD6 /* Main.storyboard */,
@@ -358,6 +362,7 @@
 				89F24312219D73E600F10AD6 /* ViewController.m in Sources */,
 				89A00796219E636000E5EB12 /* NSURL+url.m in Sources */,
 				89F2431D219D73EC00F10AD6 /* main.m in Sources */,
+				89059D8A21B52755003044C0 /* TestVC.m in Sources */,
 				89F24341219D743F00F10AD6 /* Person.m in Sources */,
 				89F2430F219D73E600F10AD6 /* AppDelegate.m in Sources */,
 				89A00799219E951B00E5EB12 /* NSObject+HKKVO.m in Sources */,

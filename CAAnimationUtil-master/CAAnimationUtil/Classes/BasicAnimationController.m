@@ -87,17 +87,19 @@
 - (void)rotate
 {
     // 对Y轴进行旋转
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     // 1秒后执行
     animation.beginTime = CACurrentMediaTime() + 1;
     // 持续时间
-    animation.duration = 2.5;
+    animation.duration = 6.5;
     // 重复次数
     animation.repeatCount = 2;
     // 起始角度
     animation.fromValue = @(0.0);
+    //旋转类型
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     // 终止角度
-    animation.toValue = @(2 * M_PI);
+    animation.toValue = @(20 * M_PI);
     // 添加动画
     [_rotateView.layer addAnimation:animation forKey:@"rotate"];
 }
