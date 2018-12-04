@@ -19,6 +19,9 @@
 		89F24327219D73EC00F10AD6 /* runTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F24326219D73EC00F10AD6 /* runTimeTests.m */; };
 		89F24332219D73EC00F10AD6 /* runTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F24331219D73EC00F10AD6 /* runTimeUITests.m */; };
 		89F24341219D743F00F10AD6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F24340219D743F00F10AD6 /* Person.m */; };
+		89FE896721B61B8D005AD903 /* PresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE896621B61B8D005AD903 /* PresentTransition.m */; };
+		89FE896A21B66590005AD903 /* TransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE896921B66590005AD903 /* TransformVC.m */; };
+		89FE896C21B6670E005AD903 /* piao.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE896B21B6670E005AD903 /* piao.png */; };
 		BDDD80691B545C61DFE4F647 /* Pods_runTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AA1DB8C249EB585D892352 /* Pods_runTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,11 @@
 		89F24333219D73EC00F10AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89F2433F219D743F00F10AD6 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		89F24340219D743F00F10AD6 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		89FE896521B61B8D005AD903 /* PresentTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentTransition.h; sourceTree = "<group>"; };
+		89FE896621B61B8D005AD903 /* PresentTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentTransition.m; sourceTree = "<group>"; };
+		89FE896821B66590005AD903 /* TransformVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformVC.h; sourceTree = "<group>"; };
+		89FE896921B66590005AD903 /* TransformVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformVC.m; sourceTree = "<group>"; };
+		89FE896B21B6670E005AD903 /* piao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piao.png; sourceTree = "<group>"; };
 		E7B3AA5839DAD66BC3801283 /* Pods-runTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runTime.debug.xcconfig"; path = "Target Support Files/Pods-runTime/Pods-runTime.debug.xcconfig"; sourceTree = "<group>"; };
 		F0A3D0F3633F9933B8639840 /* Pods-runTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runTime.release.xcconfig"; path = "Target Support Files/Pods-runTime/Pods-runTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,12 +137,11 @@
 		89F2430C219D73E600F10AD6 /* runTime */ = {
 			isa = PBXGroup;
 			children = (
+				89FE896421B61B42005AD903 /* present */,
 				89F2430D219D73E600F10AD6 /* AppDelegate.h */,
 				89F2430E219D73E600F10AD6 /* AppDelegate.m */,
 				89F24310219D73E600F10AD6 /* ViewController.h */,
 				89F24311219D73E600F10AD6 /* ViewController.m */,
-				89059D8821B52755003044C0 /* TestVC.h */,
-				89059D8921B52755003044C0 /* TestVC.m */,
 				89A00794219E636000E5EB12 /* NSURL+url.h */,
 				89A00795219E636000E5EB12 /* NSURL+url.m */,
 				89F24313219D73E600F10AD6 /* Main.storyboard */,
@@ -166,6 +173,20 @@
 				89F24333219D73EC00F10AD6 /* Info.plist */,
 			);
 			path = runTimeUITests;
+			sourceTree = "<group>";
+		};
+		89FE896421B61B42005AD903 /* present */ = {
+			isa = PBXGroup;
+			children = (
+				89FE896B21B6670E005AD903 /* piao.png */,
+				89FE896521B61B8D005AD903 /* PresentTransition.h */,
+				89FE896621B61B8D005AD903 /* PresentTransition.m */,
+				89FE896821B66590005AD903 /* TransformVC.h */,
+				89FE896921B66590005AD903 /* TransformVC.m */,
+				89059D8821B52755003044C0 /* TestVC.h */,
+				89059D8921B52755003044C0 /* TestVC.m */,
+			);
+			path = present;
 			sourceTree = "<group>";
 		};
 		F1D08B98B432AF0135CA55A6 /* Frameworks */ = {
@@ -281,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FE896C21B6670E005AD903 /* piao.png in Resources */,
 				89F2431A219D73EC00F10AD6 /* LaunchScreen.storyboard in Resources */,
 				89F24317219D73EC00F10AD6 /* Assets.xcassets in Resources */,
 				89F24315219D73E600F10AD6 /* Main.storyboard in Resources */,
@@ -359,8 +381,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FE896A21B66590005AD903 /* TransformVC.m in Sources */,
 				89F24312219D73E600F10AD6 /* ViewController.m in Sources */,
 				89A00796219E636000E5EB12 /* NSURL+url.m in Sources */,
+				89FE896721B61B8D005AD903 /* PresentTransition.m in Sources */,
 				89F2431D219D73EC00F10AD6 /* main.m in Sources */,
 				89059D8A21B52755003044C0 /* TestVC.m in Sources */,
 				89F24341219D743F00F10AD6 /* Person.m in Sources */,

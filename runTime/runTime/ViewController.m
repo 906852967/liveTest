@@ -12,7 +12,8 @@
 #import "NSObject+HKKVO.h"
 #import <os/lock.h>
 #import <pthread.h>
-#import "TestVC.h"
+#import "present/TestVC.h"
+#import "present/TransformVC.h"
 @interface ViewController ()
 
 typedef NS_ENUM(NSInteger,AnimationType) {
@@ -63,32 +64,32 @@ typedef NS_ENUM(NSInteger,AnimationType) {
 }
 #pragma mark - CATransition
 - (void)transitionWithType:(NSString *)type subtype:(NSString *)subtype{
-    CATransition *animation = [CATransition animation];
-    animation.duration = 0.7f;
-    animation.type = type;
-    if (subtype) {
-        animation.subtype = subtype;
-    }
-    //动画速度
-    animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
-    [self.view.layer addAnimation:animation forKey:@"animation"];
-    [self presentViewController:[[TestVC alloc] init] animated:NO completion:nil];
+//    CATransition *animation = [CATransition animation];
+//    animation.duration = 0.7f;
+//    animation.type = type;
+//    if (subtype) {
+//        animation.subtype = subtype;
+//    }
+//    //动画速度
+//    animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
+//    [self.view.layer addAnimation:animation forKey:@"animation"];
+    [self presentViewController:[[TransformVC alloc] init] animated:YES completion:nil];
 }
 #pragma mark - UIView
 - (void)animationWithTransition:(UIViewAnimationTransition)transition{
     [UIView animateWithDuration:0.7f animations:^{
-//        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+//        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];5
 //        TestVC *test = [[TestVC alloc]init];
 //        [UIView setAnimationTransition:transition forView:test.view cache:YES];
     }];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100, 100, 100, 100);
-    button.backgroundColor = [UIColor cyanColor];
-    [button addTarget:self action:@selector(pushVC:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    _button = [UIButton buttonWithType:UIButtonTypeCustom];
+    _button.frame = CGRectMake(100, 100, 100, 100);
+    _button.backgroundColor = [UIColor cyanColor];
+    [_button addTarget:self action:@selector(pushVC:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_button];
     [self ticketTest];
     [self foo];
     [ViewController instance];
