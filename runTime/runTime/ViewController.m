@@ -15,6 +15,7 @@
 #import "present/TestVC.h"
 #import "present/TransformVC.h"
 #import "pop/PopVC.h"
+#import "lock/LockVC.h"
 @interface ViewController ()
 
 typedef NS_ENUM(NSInteger,AnimationType) {
@@ -68,6 +69,11 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:popvc];
     [self presentViewController:nav animated:YES completion:nil];
 }
+- (void)lockVC:(UIButton *)button{
+    LockVC *lockvc = [[LockVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:lockvc];
+    [self presentViewController:nav animated:YES completion:nil];
+}
 #pragma mark - CATransition
 - (void)transitionWithType:(NSString *)type subtype:(NSString *)subtype{
 //    CATransition *animation = [CATransition animation];
@@ -105,6 +111,15 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     [secondButton addTarget:self action:@selector(popVC:) forControlEvents:UIControlEventTouchUpInside];
     [secondButton addTarget:self action:@selector(popVC:) forControlEvents:UIControlEventTouchUpOutside];
     [self.view addSubview:secondButton];
+    
+    UIButton *lockButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    lockButton.frame = CGRectMake(100, 500, 100, 100);
+    lockButton.backgroundColor = [UIColor purpleColor];
+    [lockButton setTitle:@"🔒" forState:UIControlStateNormal];
+    [lockButton addTarget:self action:@selector(lockVC:) forControlEvents:UIControlEventTouchDown];
+    [lockButton addTarget:self action:@selector(lockVC:) forControlEvents:UIControlEventTouchUpInside];
+    [lockButton addTarget:self action:@selector(lockVC:) forControlEvents:UIControlEventTouchUpOutside];
+    [self.view addSubview:lockButton];
     [self ticketTest];
     [self foo];
     [ViewController instance];
@@ -145,7 +160,7 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     sleep(.2);
     oldMoney -= 1;
     self.ticketsCount = oldMoney;
-    NSLog(@"当前剩余票数-> %d", oldMoney);
+    //NSLog(@"当前剩余票数-> %d", oldMoney);
 }
 -runtimePerson{
     Person *p = [[Person alloc] init];
