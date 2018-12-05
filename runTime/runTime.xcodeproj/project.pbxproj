@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		89059D8A21B52755003044C0 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89059D8921B52755003044C0 /* TestVC.m */; };
+		899AE63521B76D6300F12727 /* PopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AE63321B76D6300F12727 /* PopVC.m */; };
+		899AE63621B76D6300F12727 /* PopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899AE63421B76D6300F12727 /* PopVC.xib */; };
 		89A00796219E636000E5EB12 /* NSURL+url.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A00795219E636000E5EB12 /* NSURL+url.m */; };
 		89A00799219E951B00E5EB12 /* NSObject+HKKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A00798219E951B00E5EB12 /* NSObject+HKKVO.m */; };
 		89F2430F219D73E600F10AD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F2430E219D73E600F10AD6 /* AppDelegate.m */; };
@@ -46,6 +48,9 @@
 		75AA1DB8C249EB585D892352 /* Pods_runTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_runTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89059D8821B52755003044C0 /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		89059D8921B52755003044C0 /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		899AE63221B76D6300F12727 /* PopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopVC.h; sourceTree = "<group>"; };
+		899AE63321B76D6300F12727 /* PopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopVC.m; sourceTree = "<group>"; };
+		899AE63421B76D6300F12727 /* PopVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopVC.xib; sourceTree = "<group>"; };
 		89A00794219E636000E5EB12 /* NSURL+url.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+url.h"; sourceTree = "<group>"; };
 		89A00795219E636000E5EB12 /* NSURL+url.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+url.m"; sourceTree = "<group>"; };
 		89A00797219E951B00E5EB12 /* NSObject+HKKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HKKVO.h"; sourceTree = "<group>"; };
@@ -112,6 +117,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		899AE63121B76D4700F12727 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				899AE63221B76D6300F12727 /* PopVC.h */,
+				899AE63321B76D6300F12727 /* PopVC.m */,
+				899AE63421B76D6300F12727 /* PopVC.xib */,
+			);
+			path = pop;
+			sourceTree = "<group>";
+		};
 		89F24301219D73E600F10AD6 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +152,7 @@
 		89F2430C219D73E600F10AD6 /* runTime */ = {
 			isa = PBXGroup;
 			children = (
+				899AE63121B76D4700F12727 /* pop */,
 				89FE896421B61B42005AD903 /* present */,
 				89F2430D219D73E600F10AD6 /* AppDelegate.h */,
 				89F2430E219D73E600F10AD6 /* AppDelegate.m */,
@@ -305,6 +321,7 @@
 				89FE896C21B6670E005AD903 /* piao.png in Resources */,
 				89F2431A219D73EC00F10AD6 /* LaunchScreen.storyboard in Resources */,
 				89F24317219D73EC00F10AD6 /* Assets.xcassets in Resources */,
+				899AE63621B76D6300F12727 /* PopVC.xib in Resources */,
 				89F24315219D73E600F10AD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +402,7 @@
 				89F24312219D73E600F10AD6 /* ViewController.m in Sources */,
 				89A00796219E636000E5EB12 /* NSURL+url.m in Sources */,
 				89FE896721B61B8D005AD903 /* PresentTransition.m in Sources */,
+				899AE63521B76D6300F12727 /* PopVC.m in Sources */,
 				89F2431D219D73EC00F10AD6 /* main.m in Sources */,
 				89059D8A21B52755003044C0 /* TestVC.m in Sources */,
 				89F24341219D743F00F10AD6 /* Person.m in Sources */,

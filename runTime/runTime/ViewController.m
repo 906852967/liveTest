@@ -14,6 +14,7 @@
 #import <pthread.h>
 #import "present/TestVC.h"
 #import "present/TransformVC.h"
+#import "pop/PopVC.h"
 @interface ViewController ()
 
 typedef NS_ENUM(NSInteger,AnimationType) {
@@ -62,6 +63,11 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     [self transitionWithType:@"pageCurl" subtype:nil];
 //    [self presentViewController:[[TestVC alloc] init] animated:YES completion:nil];
 }
+- (void)popVC:(UIButton *)button{
+    PopVC *popvc = [[PopVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:popvc];
+    [self presentViewController:nav animated:YES completion:nil];
+}
 #pragma mark - CATransition
 - (void)transitionWithType:(NSString *)type subtype:(NSString *)subtype{
 //    CATransition *animation = [CATransition animation];
@@ -90,6 +96,15 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     _button.backgroundColor = [UIColor cyanColor];
     [_button addTarget:self action:@selector(pushVC:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_button];
+    
+    
+    UIButton *secondButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    secondButton.frame = CGRectMake(100, 300, 100, 100);
+    secondButton.backgroundColor = [UIColor yellowColor];
+    [secondButton addTarget:self action:@selector(popVC:) forControlEvents:UIControlEventTouchDown];
+    [secondButton addTarget:self action:@selector(popVC:) forControlEvents:UIControlEventTouchUpInside];
+    [secondButton addTarget:self action:@selector(popVC:) forControlEvents:UIControlEventTouchUpOutside];
+    [self.view addSubview:secondButton];
     [self ticketTest];
     [self foo];
     [ViewController instance];
@@ -157,6 +172,7 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     i++;
     _p.name = [NSString stringWithFormat:@"%d", i];
 }
+
 
 -foo{
     return nil;
