@@ -16,6 +16,7 @@
 #import "present/TransformVC.h"
 #import "pop/PopVC.h"
 #import "lock/LockVC.h"
+#import "pop/TransVC.h"
 @interface ViewController ()
 
 typedef NS_ENUM(NSInteger,AnimationType) {
@@ -120,6 +121,16 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     [lockButton addTarget:self action:@selector(lockVC:) forControlEvents:UIControlEventTouchUpInside];
     [lockButton addTarget:self action:@selector(lockVC:) forControlEvents:UIControlEventTouchUpOutside];
     [self.view addSubview:lockButton];
+    
+    UIButton *transButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    transButton.frame = CGRectMake(100, 700, 100, 100);
+    transButton.backgroundColor = [UIColor yellowColor];
+    [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchDown];
+    [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchUpInside];
+    [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchUpOutside];
+    [self.view addSubview:transButton];
+    
+    
     [self ticketTest];
     [self foo];
     [ViewController instance];
@@ -178,6 +189,11 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     //给p对象发送eat消息
     //objc_msgSend(p, @selector(eat));
     return nil;
+}
+-(void)transVC{
+    TransVC *transvc = [[TransVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:transvc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     NSLog(@"%@", _p.name);
