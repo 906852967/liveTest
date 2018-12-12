@@ -123,7 +123,7 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     [self.view addSubview:lockButton];
     
     UIButton *transButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    transButton.frame = CGRectMake(100, 700, 100, 100);
+      transButton.frame = CGRectMake(100, 700, 100, 100);
     transButton.backgroundColor = [UIColor yellowColor];
     [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchDown];
     [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchUpInside];
