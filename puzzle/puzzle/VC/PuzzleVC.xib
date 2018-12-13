@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,16 +36,28 @@
                         <outlet property="prefetchDataSource" destination="-1" id="nRU-Gp-xQH"/>
                     </connections>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97z-0d-KmZ">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lsy-xP-tTv"/>
+                    </constraints>
+                    <connections>
+                        <action selector="concealButton:" destination="-1" eventType="touchUpInside" id="FOH-Bm-rTA"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xd9-Qh-VeR" secondAttribute="trailing" id="0Az-Qg-fDP"/>
+                <constraint firstItem="97z-0d-KmZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2bB-ke-nfX"/>
                 <constraint firstItem="xd9-Qh-VeR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3fM-no-aMS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xd9-Qh-VeR" secondAttribute="bottom" id="9HQ-a1-3g4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="97z-0d-KmZ" secondAttribute="trailing" id="UCn-Gu-WUP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="97z-0d-KmZ" secondAttribute="bottom" id="cz9-xH-fgZ"/>
                 <constraint firstItem="xd9-Qh-VeR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gle-KS-NIf"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-103.2" y="169.56521739130437"/>
+            <point key="canvasLocation" x="157.59999999999999" y="150.67466266866569"/>
         </view>
     </objects>
 </document>

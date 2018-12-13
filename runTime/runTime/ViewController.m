@@ -17,6 +17,7 @@
 #import "pop/PopVC.h"
 #import "lock/LockVC.h"
 #import "pop/TransVC.h"
+#import "NSOperation/NSOperationVC.h"
 @interface ViewController ()
 
 typedef NS_ENUM(NSInteger,AnimationType) {
@@ -123,12 +124,20 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     [self.view addSubview:lockButton];
     
     UIButton *transButton = [UIButton buttonWithType:UIButtonTypeCustom];
-      transButton.frame = CGRectMake(100, 700, 100, 100);
+    transButton.frame = CGRectMake(100, 700, 100, 100);
     transButton.backgroundColor = [UIColor yellowColor];
     [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchDown];
     [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchUpInside];
     [transButton addTarget:self action:@selector(transVC) forControlEvents:UIControlEventTouchUpOutside];
     [self.view addSubview:transButton];
+    
+    UIButton *GCDButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    GCDButton.frame = CGRectMake(250, 700, 100, 100);
+    GCDButton.backgroundColor = [UIColor redColor];
+    [GCDButton addTarget:self action:@selector(GCDVC) forControlEvents:UIControlEventTouchDown];
+    [GCDButton addTarget:self action:@selector(GCDVC) forControlEvents:UIControlEventTouchUpInside];
+    [GCDButton addTarget:self action:@selector(GCDVC) forControlEvents:UIControlEventTouchUpOutside];
+    [self.view addSubview:GCDButton];
     
     
     [self ticketTest];
@@ -203,7 +212,12 @@ typedef NS_ENUM(NSInteger,AnimationType) {
     i++;
     _p.name = [NSString stringWithFormat:@"%d", i];
 }
-
+- (void)GCDVC
+{
+    NSOperationVC *vc = [[NSOperationVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:nil];
+}
 
 -foo{
     return nil;

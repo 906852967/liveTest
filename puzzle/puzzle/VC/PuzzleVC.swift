@@ -44,7 +44,10 @@ class PuzzleVC: BaseViewController {
         range.firstValue = 4
             
         }
+    @IBAction func concealButton(_ sender: UIButton) {
+        
     }
+}
 
 extension PuzzleVC : UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

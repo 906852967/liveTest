@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89059D8A21B52755003044C0 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89059D8921B52755003044C0 /* TestVC.m */; };
+		8941284821C1F6B000A83526 /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8941284721C1F6B000A83526 /* NSOperationVC.m */; };
 		8953E35121B8BDD300AE3674 /* 黑底.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8953E35021B8BDD300AE3674 /* 黑底.gif */; };
 		8953E35321B8F56B00AE3674 /* timg-18.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8953E35221B8F56B00AE3674 /* timg-18.jpeg */; };
 		899AE63521B76D6300F12727 /* PopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 899AE63321B76D6300F12727 /* PopVC.m */; };
@@ -53,6 +54,8 @@
 		75AA1DB8C249EB585D892352 /* Pods_runTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_runTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89059D8821B52755003044C0 /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		89059D8921B52755003044C0 /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		8941284621C1F6B000A83526 /* NSOperationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationVC.h; sourceTree = "<group>"; };
+		8941284721C1F6B000A83526 /* NSOperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationVC.m; sourceTree = "<group>"; };
 		8953E35021B8BDD300AE3674 /* 黑底.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "黑底.gif"; sourceTree = "<group>"; };
 		8953E35221B8F56B00AE3674 /* timg-18.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-18.jpeg"; sourceTree = "<group>"; };
 		899AE63221B76D6300F12727 /* PopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopVC.h; sourceTree = "<group>"; };
@@ -139,11 +142,13 @@
 			path = gif;
 			sourceTree = "<group>";
 		};
-		89756A0421C1031100D95F43 /* New Group */ = {
+		89756A0421C1031100D95F43 /* NSOperation */ = {
 			isa = PBXGroup;
 			children = (
+				8941284621C1F6B000A83526 /* NSOperationVC.h */,
+				8941284721C1F6B000A83526 /* NSOperationVC.m */,
 			);
-			path = "New Group";
+			path = NSOperation;
 			sourceTree = "<group>";
 		};
 		899AE63121B76D4700F12727 /* pop */ = {
@@ -192,7 +197,7 @@
 		89F2430C219D73E600F10AD6 /* runTime */ = {
 			isa = PBXGroup;
 			children = (
-				89756A0421C1031100D95F43 /* New Group */,
+				89756A0421C1031100D95F43 /* NSOperation */,
 				8953E34F21B8BDC500AE3674 /* gif */,
 				899AE63721B7AD7200F12727 /* lock */,
 				899AE63121B76D4700F12727 /* pop */,
@@ -456,6 +461,7 @@
 				89D6F5A621BE3D9000057072 /* TransVC.m in Sources */,
 				899AE63A21B7AD9800F12727 /* LockVC.m in Sources */,
 				89A00799219E951B00E5EB12 /* NSObject+HKKVO.m in Sources */,
+				8941284821C1F6B000A83526 /* NSOperationVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

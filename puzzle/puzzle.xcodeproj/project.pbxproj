@@ -12,6 +12,7 @@
 		89278B952154CFBF00192FC6 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89278B912154CFBF00192FC6 /* 3.jpg */; };
 		89278B962154CFBF00192FC6 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89278B922154CFBF00192FC6 /* 2.jpg */; };
 		89278B972154CFBF00192FC6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89278B932154CFBF00192FC6 /* 1.jpg */; };
+		8941284A21C230B600A83526 /* GCDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941284921C230B600A83526 /* GCDVC.swift */; };
 		897E9B02214F423B00D8B41A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E9B01214F423B00D8B41A /* AppDelegate.swift */; };
 		897E9B04214F423B00D8B41A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E9B03214F423B00D8B41A /* ViewController.swift */; };
 		897E9B07214F423B00D8B41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897E9B05214F423B00D8B41A /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		89278B912154CFBF00192FC6 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		89278B922154CFBF00192FC6 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		89278B932154CFBF00192FC6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		8941284921C230B600A83526 /* GCDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDVC.swift; sourceTree = "<group>"; };
 		897E9AFE214F423B00D8B41A /* puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897E9B01214F423B00D8B41A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		897E9B03214F423B00D8B41A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				898348F121548DB900F7C66B /* PhotoVC.xib */,
 				89FC80DA215A100B0063BBB5 /* PuzzleVC.swift */,
 				89FC80DB215A100B0063BBB5 /* PuzzleVC.xib */,
+				8941284921C230B600A83526 /* GCDVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				89FC80D92159EA540063BBB5 /* BaseViewController.swift in Sources */,
 				897E9B02214F423B00D8B41A /* AppDelegate.swift in Sources */,
 				898348F221548DB900F7C66B /* PhotoVC.swift in Sources */,
+				8941284A21C230B600A83526 /* GCDVC.swift in Sources */,
 				89FC80DC215A100B0063BBB5 /* PuzzleVC.swift in Sources */,
 				89990493216EF1F6004BF918 /* Extension.swift in Sources */,
 			);
