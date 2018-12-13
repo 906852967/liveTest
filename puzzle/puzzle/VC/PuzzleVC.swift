@@ -93,8 +93,6 @@ extension PuzzleVC{
     }
     func gcdTest(){
         let queue =  DispatchGroup.init()
-        
-        
     }
     func tailorimage(){
         view.isOpaque = true

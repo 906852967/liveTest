@@ -57,6 +57,16 @@ typedef NS_ENUM(NSUInteger, MCTransitonAnimTimingFunc) {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:self.button];
+    //CGD测试
+    //[self GCDTest];
+    //
+    //[self communication];
+    //测试异步同步执行
+    //[self asynQueueSyn];
+    //after
+    //[self after];
+    //groupNotify
+    [self groupNotify];
     
 }
 - (UIButton *)button{
@@ -84,6 +94,133 @@ typedef NS_ENUM(NSUInteger, MCTransitonAnimTimingFunc) {
         [self.view addSubview:_imageView];
     }
     return _imageView;
+}
+#pragma GCD
+- (void)GCDTest
+{
+    //DISPATCH_QUEUE_SERIAL 表示串行队列，DISPATCH_QUEUE_CONCURRENT表示并发队列
+    dispatch_queue_t queue = dispatch_queue_create("myGCD", DISPATCH_QUEUE_CONCURRENT);
+    //主队列
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    //全局并发队列  第一个参数表示队列优先级，一般用DISPATCH_QUEUE_PRIORITY_DEFAULT。第二个参数暂时没用，用0即可
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    NSLog(@"主线程：%@",[NSThread currentThread]);
+    dispatch_queue_t queueOne = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queueOne, ^{
+        for (int i = 0; i < 2; ++i) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"1====%@",[NSThread currentThread]);      // 打印当前线程
+        }
+    });
+    dispatch_async(queueOne, ^{
+        for (int i = 0; i < 2; ++i) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"2====%@",[NSThread currentThread]);      // 打印当前线程
+        }
+    });
+    
+    NSLog(@"执行任务1");
+    dispatch_sync(globalQueue, ^{
+        NSLog(@"执行任务2");
+    });
+    NSLog(@"执行任务3");
+}
+- (void)communication {
+    // 获取全局并发队列
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    // 获取主队列
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    
+    dispatch_async(queue, ^{
+        // 异步追加任务
+        for (int i = 0; i < 2; ++i) {
+            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+            NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
+        }
+        
+        // 回到主线程
+        dispatch_async(mainQueue, ^{
+            // 追加在主线程中执行的任务
+            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+            NSLog(@"2---%@",[NSThread currentThread]);      // 打印当前线程
+        });
+    });
+}
+//异步情况同步操作
+- (void)asynQueueSyn
+{
+    dispatch_queue_t queue = dispatch_queue_create("rw_queue", DISPATCH_QUEUE_CONCURRENT);
+    for (int i = 0; i < 5; i++) {
+        [self read:queue];
+        [self write:queue];
+        [self look:queue];
+    }
+}
+- (void)read:(dispatch_queue_t)queue
+{
+    dispatch_async(queue, ^{
+        sleep(1);
+        NSLog(@"read===1");
+    });
+}
+- (void)write:(dispatch_queue_t)queue
+{
+    dispatch_barrier_async(queue, ^{
+        sleep(1);
+        NSLog(@"write===2");
+    });
+}
+- (void)look:(dispatch_queue_t)queue
+{
+    dispatch_barrier_async(queue, ^{
+        sleep(1);
+        NSLog(@"look===3");
+    });
+}
+//GCD 延时执行方法：dispatch_after
+- (void)after
+{
+    NSLog(@"currentThread---%@",[NSThread currentThread]);  // 打印当前线程
+    NSLog(@"asyncMain---begin");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // 2.0秒后异步追加任务代码到主队列，并开始执行
+        NSLog(@"after---%@",[NSThread currentThread]);  // 打印当前线程
+    });
+}
+/**
+ * 队列组 dispatch_group_notify
+ */
+- (void)groupNotify
+{
+    NSLog(@"currentThread---%@",[NSThread currentThread]);  // 打印当前线程
+    NSLog(@"group---begin");
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // 追加任务1
+        for (int i = 0; i < 2; ++i) {
+            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+            NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
+        }
+        
+    });
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        // 追加任务2
+        for (int i = 0; i < 2; ++i) {
+            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+            NSLog(@"2---%@",[NSThread currentThread]);      // 打印当前线程
+        }
+    });
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        // 等前面的异步任务1、任务2都执行完毕后，回到主线程执行下边任务
+        for (int i = 0; i < 2; ++i) {
+            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+            NSLog(@"3---%@",[NSThread currentThread]);      // 打印当前线程
+        }
+        NSLog(@"group---end");
+    });
 }
 - (CATransition *)setTransitionAnimationWithType:(MCTransitonAnimType)animType
                               duration:(float)duration
